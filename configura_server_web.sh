@@ -16,4 +16,7 @@ sudo wget https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/m
 # Copia tmp para pasta apache
 sudo cp /tmp/* /var/www/ -rf
 
+sudo unzip /var/www/main.zip
+sudo rm -rf main.zip
+
 echo "Pronto"
