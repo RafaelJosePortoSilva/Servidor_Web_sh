@@ -11,14 +11,14 @@ sudo apt install apache2 -y
 sudo apt install unzip
 
 # Baixa aplicacao para diretorio tmp
-sudo rm -rf /tmp/zip
+sudo rm -rf /tmp/*.zip
 sudo wget https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip /tmp
 
 # Copia tmp para pasta apache
-sudo rm -rf /var/www/*
-sudo cp /tmp/* /var/www/ -rf
+sudo rm -rf /var/www/html/*
+sudo cp /tmp/* /var/www/html -rf
 
-sudo unzip /var/www/main.zip
+sudo unzip /var/www/html/main.zip
 sudo rm -rf main.zip
 
 echo "Pronto"
